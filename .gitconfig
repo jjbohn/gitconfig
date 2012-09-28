@@ -1,0 +1,20 @@
+[user]
+	name = John Bohn
+	email = jjbohn@gmail.com
+[core]
+	excludesfile = /Users/jbohn/.gitignore
+	autocrlf = input
+	sparseCheckout = on
+[color]
+	ui = true
+[alias]
+    ribbon = tag --force _ribbon origin/develop
+    catchup = log --patch --reverse --topo-order _ribbon..origin/develop
+    s = status
+    d = diff
+    ch = checkout
+    p = pull
+    amend = commit --amend
+    last = log -1
+[push]
+	default = nothing
